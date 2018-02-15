@@ -5,20 +5,55 @@
   <meta charset="UTF-8">
   <title>Student Database App</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="static/css/style.css"
-  
+  <link rel="stylesheet" href="static/css/style.css">
+  <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
   <!-- Navigation -->
-  <nav>
+  <nav class="mr-0 w-auto row navbar-light navbar navbar-expand-lg justify-content-between flex-row text-white">
+    <div class="col-4">
+      <a class="navbar-brand" href="#">
+        <img src="static/images/koax_logo.svg" width="40" height="40" alt="KOAX">
+      </a>
+    </div>
+    <div class="col-4 text-center">
+      <a class="navbar-brand mr-0 text-center" href="#">
+          <img src="static/images/koax%20product%20logo.svg" width="40" height="40" alt="rlogo">
+      </a>
+    </div>
+    <div class="col-4 text-right" id="hamburger">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse w-auto mt-5 mt-lg-0 text-right text-nowrap" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Care/Safety</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
- <div class="container-fluid cont">
+  <!-- Page Start -->
+  <div class="container-fluid cont">
     <div class="row page1 align-items-end">
-      <div class="col-md-6 col-lg-4 product1 order-md-2">
+      <div class="col-lg-4 product1 order-lg-2">
         <img src="static/images/dildo1.png" class="img-fluid" alt="product1">
       </div>
-      <div class="col-md-6 col-lg-8 statementcont order-md-1">
+      <div class="col-lg-8 statementcont order-lg-1">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 offset-md-1 statement">
@@ -26,15 +61,44 @@
               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
             </div>
           </div>
-        </div> 
-      </div> <!-- Statement Container End -->
-        <!-- End Product Container -->
-    </div> <!-- Page 1 Row End -->
-
-    <div class="row page2">
-      <div class="col-md-6 gallery">
-        Gallery
+        </div>
       </div>
+      <!-- Statement Container End -->
+      <!-- End Product Container -->
+    </div>
+    <!-- Page 1 Row End -->
+    <div class="row page2">
+      <div class="col-md-6">
+        <div id="carousel-rectangle" class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-rectangle" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-rectangle" data-slide-to="1"></li>
+                  <li data-target="#carousel-rectangle" data-slide-to="2"></li>
+                  <li data-target="#carousel-rectangle" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img class="d-block img-fluid rounded-circle" src="static/images/1.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item ">
+                    <img class="d-block img-fluid rounded-circle" src="static/images/2.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid rounded-circle" src="static/images/3.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid rounded-circle" src="static/images/4.png" alt="Forth slide">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Container for Gallery -->
       <div class="col-md-6">
         <div class="container">
           <div class="row page2 align-items-center">
@@ -45,37 +109,79 @@
           </div>
         </div>
       </div>
-    </div> <!-- Page 2 Row End -->
+    </div>
+    <!-- Page 2 Row End -->
     <div class="row page3 align-items-end">
       <div class="col-12 page3-pg">
         <div class="container-fluid">
           <div class="row align-items-center">
-
-      <div class="col-md-5">
-        <div class="product-info">
-        <h2>Product Information</h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-      </div>
-      </div>
-      <div class="col-md-5 offset-md-2">
-        <img src="static/images/1d0fbb21259c661380d17b2b4e865ca2_large2.jpg" class="img-fluid" alt="explaination">
+            <div class="col-md-5">
+              <div class="product-info">
+                <h2>Product Information</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="col-md-5 offset-md-2">
+              <img src="static/images/1d0fbb21259c661380d17b2b4e865ca2_large2.jpg" class="img-fluid" alt="explaination">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-    </div>
-    </div> <!-- Page 3 Row End -->
-    <div class="row page4">
-      <div class="col-5">
+    <!-- Page 3 Row End -->
+    <div class="row align-items-center page4" id="contact">
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="contact-section">
+          <div class="container">
+            <h2>Contact and Info</h2>
+            <div class="row">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="exampleInputName2"></label>
+                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail2"></label>
+                  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email-Adresse">
+                </div>
+                <div class="form-group ">
+                  <label for="exampleInputText"></label>
+                  <textarea class="form-control" placeholder="Write to Us!"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default button">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-6">
+      <div class="offset-md-2 col-md-4 col-sm-12">
+        <div class="newsletter">
+          <h1>Newsletter</h1>
+          <form action="" method="post">
+            <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
+              <input type="text" id="" name="" placeholder="your@email.com">
+            </div>
+            <br>
+            <button type="submit" value="Subscribe Now!" class="btn btn-large buttonleft"> Subscribe Now </button>
+        </div>
+        </form>
       </div>
-    </div> <!-- Page 4 Row End -->
- 
-    <!-- Gallery Feature -->
-    <!-- Customer Care -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+    <footer class="row">
+      <ul class="nav navbar-nav col-12">
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Termes & Conditions</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- Page 4 Row End -->
+  <!-- Gallery Feature -->
+  <!-- Customer Care -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
