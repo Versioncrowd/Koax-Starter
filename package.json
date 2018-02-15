@@ -1,0 +1,22 @@
+{
+  "name": "koax-starter",
+  "version": "1.0.0",
+  "description": "Koax, Sex Toys, Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Versioncrowd/Koax-Starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Versioncrowd/Koax-Starter/issues"
+  },
+  "homepage": "https://github.com/Versioncrowd/Koax-Starter#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
