@@ -17,3 +17,29 @@ nav {
   background-color: grey;
   height:  90%;
 }
+
+.w-auto {
+  width: auto!important;
+}
+
+.navbar {
+  border: none;
+  width: 100%;
+}
+
+.navbar-brand img{
+  width: 100px;
+}
+
+
+.navbar-nav a{
+  color: #343434;
+}
+
+.navbar-nav a:hover{
+  color: #E4DCD8;
+}
+
+.navbar-toggler {
+  border-color: 1px solid white;
+}
